@@ -36,11 +36,14 @@ footer {
 .directions {
   padding-top:20px;
   padding-bottom:20px;
-  display:flex;
   text-align: center;
   color: red;
 }
 
 .button {
+  text-align: center;
+}
+
+.boardgame {
   text-align: center;
 }
