@@ -6,8 +6,8 @@
     <title>Juego de Memoria!</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <h1 class="centerText">
+  <body onload="startGame()">
+    <h1 class="centerText">  
       <u>La Ropa: Juego de Memoria</u>
     </h1>
 
@@ -18,9 +18,17 @@
       <h3 class="directions">Please match the object, description, or word in Spanish with its corresponding image or meaning. A hint is given for each image that shows the object, description, or word in English.
       </h3>
 
-    
+        <!--Dice-->
+      <p id="placeholder">
+        
+      </p>
+      <button id="button">Roll Dice</button>
+      <script src="dice.js"></script>
+      <script src="ui.js"></script>
+    <!--End of Dice-->
+
     <div class="boardgame"> 
-      <iframe src="https://iframeforboardgame.amrikverma.repl.co/" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" width="2000" height="900"></iframe>
+      <iframe src="https://docs.google.com/drawings/d/1dDfrzILqEMB9y5SerbRwRaA6jv7SPzk8zw4SwMygHok/edit?usp=sharing" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" width="2000" height="900"></iframe>
     </div>
 
     <hr>
@@ -36,10 +44,6 @@
     </div>
 
     <br>
-
-    <div class="button"><button onclick="finished()">Finish</button></div>
-
-
 
     <footer>
       © Copyright 2021 - Amrik || Marko
