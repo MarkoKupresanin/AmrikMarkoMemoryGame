@@ -6,7 +6,8 @@
     <title>Juego de Memoria!</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body onload="startGame()">
+  <body>
+
     <h1 class="centerText">  
       <u>La Ropa: Juego de Memoria</u>
     </h1>
@@ -18,6 +19,7 @@
       <h3 class="directions">Please match the object, description, or word in Spanish with its corresponding image or meaning. A hint is given for each image that shows the object, description, or word in English.
       </h3>
 
+
         <!--Dice-->
       <p id="placeholder">
         
@@ -25,22 +27,40 @@
       <button id="button">Roll Dice</button>
       <script src="dice.js"></script>
       <script src="ui.js"></script>
-    <!--End of Dice-->
+      <!--End of Dice-->
+      <br> 
+      <br>
+      <button id="chancebtn" onclick="ShowChance()"> Chance </button>
+      <br>
+      <br>
+      <div id="safeTimer">
+        <h2>Safe Timer</h2>
+          <p id="safeTimerDisplay">00:30</p>
+      </div>
+      <button id="startTimer" onclick="Starttimer()"> Start Timer</button>
+      <button id="endTimer" onclick="Stoptimer()"> End Timer</button>
+
 
     <div class="boardgame"> 
       <iframe src="https://docs.google.com/drawings/d/1dDfrzILqEMB9y5SerbRwRaA6jv7SPzk8zw4SwMygHok/edit?usp=sharing" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" width="2000" height="900"></iframe>
     </div>
 
     <hr>
-
+  <h2> Nivel 1 </h2>
       <div class="game1">
-        <iframe src="https://learningapps.org/watch?app=17893598" style="border:0px;width:100%;height:1000px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+        <iframe src="https://learningapps.org/watch?v=pbo18zn1321" style="border:0px;width:100%;height:800px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
       </div>
 
     <hr>
-
+<h2> Nivel 2 </h2>
     <div class="game2">
-        <iframe src="https://learningapps.org/watch?v=pd7k6jw6t21" style="border:0px;width:100%;height:1000px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+      <iframe src="https://learningapps.org/watch?app=17893598" style="border:0px;width:100%;height:800px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    </div>
+
+    <hr>
+<h2> Nivel 3 </h2>
+    <div class="game2">
+      <iframe src="https://learningapps.org/watch?v=pd7k6jw6t21" style="border:0px;width:100%;height:800px" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
     </div>
 
     <br>
