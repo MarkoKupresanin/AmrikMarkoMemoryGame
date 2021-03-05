@@ -8,6 +8,10 @@
   text-align: center;
   color:blueviolet;
 }
+#chancebtn {
+  background-color: yellow;
+  color:black;
+}
 
 iframe {
   margin:auto;
