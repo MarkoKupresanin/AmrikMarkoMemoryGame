@@ -24,7 +24,7 @@ function ShowChance() {
   
   var myArray = [
   // desafio means challenge
-  "¡Mal, muy mal! Retroceder dos lugeres.",
+  "¡Mal, muy mal! Retroceder tres espacios.",
   "¡Desafio! Completo Nivel Uno en dos minutos.",
   "¡Desafio! Completo Nivel Dos, en tres minutos.",
   "¡Desafio! Completo Nivel Tres, en cuatro minutos."
@@ -34,6 +34,15 @@ function ShowChance() {
   alert(randomItem)
 }
 
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+
+
 function timer1(){
     var sec = 120;
     var timer = setInterval(function(){
@@ -41,13 +50,15 @@ function timer1(){
         sec--;
         if (sec < 0) {
             clearInterval(timer);
-            alert("¡Ai Caramba! Return to the game [1]")
+            alert("¡Ai Caramba! Volver al juego.")
         }
     }, 1000);
 }
 
 function endTimer1(){
-  location.reload()
+  location.reload();
+  sleep(2000);
+  alert("¡Buen trabajo! Has completado el nivel 1 a tiempo. Recompensa: el siguiente nivel en el que aterrizas es un nivel 1. ¡Volver al juego de mesa y seguir jugando!");
 }
 
 
@@ -60,13 +71,15 @@ function timer2(){
         sec--;
         if (sec < 0) {
             clearInterval(timer);
-            alert("¡Ai Caramba! Return to the game [2]")
+            alert("¡Ai Caramba! Volver al juego.")
         }
     }, 1000);
 }
 
 function endTimer2(){
-  location.reload()
+  location.reload();
+  sleep(2000);
+  alert("¡Buen trabajo! Has completado el nivel 2 a tiempo. Recompensa: para el siguiente vuelta, puedes decidir el número de dados que quieres y tienes que ir ese número de espacios en el juego de mesa. ¡Volver al juego de mesa y seguir jugando!")
 }
 
 
@@ -78,11 +91,13 @@ function timer3(){
         sec--; 
         if (sec < 0) {
             clearInterval(timer);
-            alert("¡Ai Caramba! Return to the game [3]")
+            alert("¡Ai Caramba! Volver al juego.")
         }
     }, 1000);
 }
 
 function endTimer3(){
-    location.reload()
+    location.reload();
+    sleep(2000)
+    alert("¡Buen trabajo! Has completado el nivel 3 a tiempo. Recompensa: puedes saltarte el siguiente espacio en el que aterrizas. ¡Volver al juego de mesa y seguir jugando!")
 }
