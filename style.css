@@ -19,7 +19,7 @@ iframe {
 }
 
 footer {
-  padding-top:50px;
+  padding-top:55px;
   text-align:center;
   font-size:13px;
 }
@@ -43,7 +43,13 @@ footer {
   padding-bottom:20px;
   text-align: center;
   color: red;
+  float: left;
 }
+
+.image {
+  float:right;
+}
+
 
 .button {
   text-align: center;
