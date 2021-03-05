@@ -43,13 +43,13 @@ footer {
   padding-bottom:20px;
   text-align: center;
   color: red;
-  float: left;
 }
 
-.image {
-  float:right;
+.directions2 {
+  padding-top:20px;
+  text-align: center;
+  color: red;
 }
-
 
 .button {
   text-align: center;
@@ -61,7 +61,6 @@ footer {
 }
 
 /*dice stuff:*/
-
 button {
   background-color: rgb(82, 186, 179);
   border-radius: 6px;
@@ -75,7 +74,7 @@ button {
 #placeholder {
   height: 100px;
   width: 100px;
-  padding: 50px;
+  padding: 20px;
   margin: 50px auto;
   border: 1px solid gray;
   border-radius: 10px;  
