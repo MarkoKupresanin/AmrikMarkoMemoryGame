@@ -25,9 +25,9 @@ function ShowChance() {
   var myArray = [
   // desafio means challenge
   "¡Mal, muy mal! Retroceder tres espacios.",
-  "¡Desafio! Completo Nivel Uno en dos minutos.",
-  "¡Desafio! Completo Nivel Dos, en tres minutos.",
-  "¡Desafio! Completo Nivel Tres, en cuatro minutos."
+  "¡Desafio! Completa Nivel Uno en dos minutos.",
+  "¡Desafio! Completa Nivel Dos en tres minutos.",
+  "¡Desafio! Completa Nivel Tres en cuatro minutos."
 ];
   var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
 
@@ -58,7 +58,7 @@ function timer1(){
 function endTimer1(){
   location.reload();
   sleep(2000);
-  alert("¡Buen trabajo! Has completado el nivel 1 a tiempo. Recompensa: el siguiente nivel en el que aterrizas es un nivel 1. ¡Volver al juego de mesa y seguir jugando!");
+  alert("¡Buen trabajo! Completaste el nivel 1 a tiempo. Recompensa: el siguiente nivel en el que aterrizas es un nivel 1. ¡Volver al juego de mesa y seguir jugando!");
 }
 
 
@@ -79,7 +79,7 @@ function timer2(){
 function endTimer2(){
   location.reload();
   sleep(2000);
-  alert("¡Buen trabajo! Has completado el nivel 2 a tiempo. Recompensa: para el siguiente vuelta, puedes decidir el número de dados que quieres y tienes que ir ese número de espacios en el juego de mesa. ¡Volver al juego de mesa y seguir jugando!")
+  alert("¡Buen trabajo! Completaste el nivel 2 a tiempo. Recompensa: para el siguiente vuelta, puedes decidir el número de dados que quieres y tienes que ir ese número de espacios en el juego de mesa. ¡Volver al juego de mesa y seguir jugando!")
 }
 
 
@@ -99,5 +99,5 @@ function timer3(){
 function endTimer3(){
     location.reload();
     sleep(2000)
-    alert("¡Buen trabajo! Has completado el nivel 3 a tiempo. Recompensa: puedes saltarte el siguiente espacio en el que aterrizas. ¡Volver al juego de mesa y seguir jugando!")
+    alert("¡Buen trabajo! Completaste el nivel 3 a tiempo. Recompensa: puedes saltarte el siguiente espacio en el que aterrizas. ¡Volver al juego de mesa y seguir jugando!")
 }
