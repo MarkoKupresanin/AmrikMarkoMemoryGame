@@ -4,4 +4,4 @@ It is very cool
 
 Grade recieved: --/--
 
-Date Completed: 3/--
+Date Completed: 3/6
